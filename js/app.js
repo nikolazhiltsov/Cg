@@ -62,27 +62,6 @@ ScrollSmoother.create({
     effects: true
 })
 
-gsap.fromTo('.about__content .about__content__item:first-child', {opacity: 0, x:-80}, {
-    opacity: 1,
-    x: 0,
-    scrollTrigger: {
-        trigger: '.about__content',
-        start: 'top bottom',
-        end:'+=500',
-        scrub: true
-    }
-})
-gsap.fromTo('.about__content .about__content__item:last-child', {opacity: 0,x:80}, {
-    opacity: 1,
-    x: 0,
-    scrollTrigger: {
-        trigger: '.about__content',
-        start: 'top bottom',
-        end:'+=500',
-        scrub: true
-    }
-})
-
 document.documentElement.addEventListener('mousedown', (e) => {
     let posX = e.offsetX;
     let posY = e.offsetY;
